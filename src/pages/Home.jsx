@@ -1,16 +1,49 @@
+import { useState } from 'react';
 import './Home.css';
 
 function Home() {
+  const [active, setActive] = useState(false);
+  const activeMenu = () => {
+    setActive(!active);
+  };
+  const rotateButton = (e) => {
+    const element = e.target;
+    if (element.classList.contains('st2')) {
+      activeMenu();
+      element.classList.remove('st2');
+      setTimeout(() => {
+        element.classList.remove('st1');
+      }, 500);
+    }
+
+    if (!element.classList.contains('st1')) {
+      activeMenu();
+      element.classList.add('st1');
+      setTimeout(() => {
+        element.classList.add('st2');
+      }, 500);
+    }
+  };
+
   return (
     <>
+      <nav className={active ? 'navActive' : 'nav'}>
+        <a href="google.com">
+          <span>Home</span>
+        </a>
+        <a href="google.com">
+          <span>Projetos</span>
+        </a>
+        <a href="google.com">
+          <span>Contato</span>
+        </a>
+      </nav>
       <div className="content-home">
         <header className="header">
-          <div className="burguer">
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+          <div className="burguer" onClick={rotateButton}>
+            <i></i>
+            <i></i>
+            <i></i>
           </div>
         </header>
         <div className="main">
@@ -25,6 +58,7 @@ function Home() {
           </p>
         </div>
       </div>
+
       <ul className="socials">
         <li className="github">
           <img src="" alt="" />
