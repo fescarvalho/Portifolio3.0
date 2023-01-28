@@ -1,9 +1,9 @@
-import './App.css';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="">
-      <h1 className="text-center">Hellow Word</h1>
+      <Home />
     </div>
   );
 }

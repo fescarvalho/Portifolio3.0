@@ -11,12 +11,19 @@
   },
   "plugins": ["react"],
   "rules": {
-    "react/jsx-filename-extension": [
-      "warn",
+    "jsx-a11y/label-has-associated-control": "off",
+    "react/react-in-jsx-scope": "off",
+    "jsx-a11y/heading-has-content": "off",
+    "jsx-a11y/anchor-has-content": "off",
+    "jsx-a11y/control-has-associated-label": "off",
+    "import/no-named-as-default": "off",
+    "react/button-has-type": "off",
+    "react/self-closing-comp": [
+      "error",
       {
-        "extensions": [".js", ".jsx"]
+        "component": true,
+        "html": false
       }
-    ],
-    "react/react-in-jsx-scope": "off"
+    ]
   }
 }
