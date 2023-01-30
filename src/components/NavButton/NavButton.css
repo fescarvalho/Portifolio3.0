@@ -18,6 +18,16 @@
   cursor: pointer;
   z-index: 1000;
   position: fixed;
+  animation: animeBurguer 2s ease-in-out;
+}
+
+@keyframes animeBurguer {
+  0% {
+    transform: translateX(400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 .burguer i {
@@ -153,6 +163,7 @@
     transform: rotate(0deg);
   }
 }
+
 .burguer:hover i:first-child {
   transform: translate3d(0, -5px, 0);
 }

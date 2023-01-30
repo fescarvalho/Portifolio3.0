@@ -4,6 +4,7 @@ import './NavButton.css';
 
 function NavButton() {
   const [active, setActive] = useState(false);
+
   const activeMenu = () => {
     setActive(!active);
   };

@@ -1,8 +1,23 @@
+import { useEffect } from 'react';
 import NavButton from '../../components/NavButton/NavButton';
 import Socials from '../../components/Socials/Socials';
 import './Home.css';
 
 function Home() {
+  const textEffect = () => {
+    const element = document.querySelector('p');
+    const textoArray = element.innerHTML.split('');
+    element.innerHTML = '';
+    textoArray.forEach((letra, i) =>
+      setTimeout(() => {
+        element.innerHTML += letra;
+      }, 50 * i),
+    );
+  };
+  useEffect(() => {
+    textEffect();
+  }, []);
+
   return (
     <>
       <NavButton />

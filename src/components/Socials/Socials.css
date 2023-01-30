@@ -1,11 +1,22 @@
 .socials {
   display: flex;
   flex-direction: column;
+  position: absolute;
   list-style: none;
-  top: 350px;
   left: 0;
   z-index: -10;
+  margin-top: -200px;
 }
+
+@keyframes anime {
+  0% {
+    transform: translateX(-400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
 .socials li {
   width: 75px;
   height: 57px;
@@ -35,6 +46,7 @@
       #8c0061 60%,
       #002ca9 90%
     );
+  animation: anime 1.8s ease-in-out;
 }
 .socials .instagram a span,
 .socials .linkedin a span,
@@ -59,9 +71,11 @@
 }
 .socials .linkedin {
   background: var(--text-linkedin);
+  animation: anime 1.9s ease-in-out;
 }
 .socials .github {
   background: var(--primary-color);
+  animation: anime 2s ease-in-out;
 }
 .socials li:hover {
   margin-left: 0px;
@@ -72,7 +86,7 @@
     display: flex;
     gap: 0px;
     flex-direction: row;
-    margin-top: 50%;
+    margin-top: 70px;
     position: fixed;
   }
   .socials li {
