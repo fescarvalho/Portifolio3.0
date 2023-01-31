@@ -1,0 +1,12 @@
+.header-project {
+  width: 100%;
+  overflow: hidden;
+}
+
+.project-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 2rem;
+}

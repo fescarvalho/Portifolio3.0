@@ -21,7 +21,6 @@
 
 .main h1 {
   justify-self: top;
-
   font-family: 'Barlow';
   font-weight: 700;
   letter-spacing: 2px;
@@ -30,7 +29,7 @@
 }
 
 .main-title {
-  width: 90vw;
+  width: 100%;
   margin: 20px 0;
 }
 .main p {

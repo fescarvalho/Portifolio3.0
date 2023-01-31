@@ -1,0 +1,108 @@
+.content {
+  width: 60vw;
+
+  height: 100%;
+  margin: 5rem auto;
+}
+
+.page-description h2 {
+  font-family: 'Barlow';
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--text-color1);
+}
+
+.page-description p {
+  font-family: 'Barlow';
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--text-color3);
+}
+
+.project {
+  width: 90%;
+  position: relative;
+  height: 300px;
+  margin: 10px;
+  box-shadow: var(--darkShadow), 0 0 50px rgb(0 0 0 / 75%) inset;
+  margin-bottom: 2rem;
+  background: url('../../../public/paisagem.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.project .button {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  width: 200px;
+  height: 40px;
+  font-family: Poppins;
+  background: var(--primary-variant);
+  z-index: 200;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--text-color2);
+  box-shadow: var(--darkShadow);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+.project:hover {
+  width: 90%;
+  position: relative;
+  height: 300px;
+  margin: 10px;
+  box-shadow: var(--darkShadow);
+  margin-bottom: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.project:after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  margin-bottom: 2rem;
+  background-image: url('../../../public/hover.jpg');
+  box-shadow: 0 0 50px rgb(0 0 0 / 75%) inset;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  transform: translateY(-300px);
+  filter: grayscale(0.75);
+  transition: all 0.4s ease-in-out;
+}
+
+.project:hover::after {
+  display: block;
+  transform: translateY(0px);
+}
+
+.project:hover button {
+  opacity: 1;
+}
+.project:hover::after .button {
+  display: block;
+}
+
+.project .name {
+  position: absolute;
+  text-align: center;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: var(--secondary-color);
+  height: 3rem;
+}
+.project .name h3 {
+  font-size: 1.2rem;
+  font-family: Poppins;
+}
