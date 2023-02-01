@@ -1,8 +1,11 @@
+/* eslint-disable array-callback-return */
+/* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/mouse-events-have-key-events */
 
 import './Projetos.css';
 import NavButton from '../../components/NavButton/NavButton';
 import ProjectComponent from '../../components/Project/ProjectComponent';
+import projetos from './mockProject';
 
 function Projetos() {
   return (
@@ -31,12 +34,15 @@ function Projetos() {
           </p>
         </div>
         <div className="project-main">
-          <ProjectComponent name="Nome do Projeto" />
-          <ProjectComponent name="Nome do Projeto" />
-          <ProjectComponent name="Nome do Projeto" />
-          <ProjectComponent name="Nome do Projeto" />
-          <ProjectComponent name="Nome do Projeto" />
-          <ProjectComponent name="Nome do Projeto" />
+          {projetos.map((projeto) => (
+            <ProjectComponent
+              key={projeto.id}
+              name={projeto.name}
+              src={projeto.src}
+              linkImage1={projeto.linkImage1}
+              linkImage2={projeto.linkImage2}
+            />
+          ))}
         </div>
       </div>
     </>
