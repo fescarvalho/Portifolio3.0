@@ -3,10 +3,114 @@
   overflow: hidden;
 }
 
+.content .ribon {
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  z-index: 900;
+  animation: animeBanner 5s ease-in-out;
+}
+.ribon a {
+  position: absolute;
+  display: block;
+  width: 200%;
+  left: -20%;
+  top: -20%;
+  cursor: pointer;
+  background-color: #026ccf;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 0;
+  font-family: 'Heebo';
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: -2px 3px 1px rgb(0 0 0 / 23%);
+  opacity: 1;
+  text-transform: uppercase;
+  transform: translate3d(0, 0, 0) rotate(45deg);
+  transform-origin: 0 0;
+  height: 44px;
+  line-height: 47px;
+}
 .project-main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   flex-wrap: wrap;
   width: 100%;
   margin-top: 2rem;
+}
+
+@keyframes animeBanner {
+  0% {
+    transform: translateX(400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@media (max-width: 800px) {
+  .project-main {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .project-main {
+    width: 100vw;
+  }
+  .ribon a {
+    position: absolute;
+    display: block;
+    width: 150%;
+    left: 10%;
+    top: -20%;
+    cursor: pointer;
+    background-color: #026ccf;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0;
+    font-family: 'Heebo';
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: -2px 3px 1px rgb(0 0 0 / 23%);
+    opacity: 1;
+    text-transform: uppercase;
+    transform: translate3d(0, 0, 0) rotate(45deg);
+    transform-origin: 0 0;
+    height: 44px;
+  }
+}
+@media (max-width: 500px) {
+  .ribon a {
+    position: absolute;
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: -20%;
+    cursor: pointer;
+    background-color: #026ccf;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0;
+    font-family: 'Heebo';
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: -2px 3px 1px rgb(0 0 0 / 23%);
+    opacity: 1;
+    text-transform: uppercase;
+    transform: translate3d(0, 0, 0) rotate(45deg);
+
+    height: 30px;
+  }
 }

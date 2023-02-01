@@ -1,6 +1,5 @@
 .content {
   width: 60vw;
-
   height: 100%;
   margin: 5rem auto;
 }
@@ -8,6 +7,7 @@
 .page-description h2 {
   font-family: 'Barlow';
   font-size: 2.5rem;
+  text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--text-color1);
 }
@@ -17,6 +17,7 @@
   font-size: 1.5rem;
   margin-bottom: 20px;
   color: var(--text-color3);
+  line-height: 2;
 }
 
 .project {
@@ -26,17 +27,22 @@
   margin: 10px;
   box-shadow: var(--darkShadow), 0 0 50px rgb(0 0 0 / 75%) inset;
   margin-bottom: 2rem;
-  background: url('../../../public/paisagem.jpg');
+  background: center center;
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
-.project .button {
+.project a {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   top: 50%;
-  left: 30%;
   width: 200px;
   height: 40px;
   font-family: Poppins;
@@ -51,46 +57,46 @@
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
 }
-.project:hover {
-  width: 90%;
-  position: relative;
-  height: 300px;
-  margin: 10px;
+
+.project .main-image {
+  min-width: 100%;
+  min-height: 100%;
+}
+.project .main-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.project .image1 {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  transform: translateY(-300px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  filter: grayscale(80%) blur(1px);
+  box-shadow: 0 0 50px rgb(0 0 0 / 75%) inset;
+}
+.project .image2 {
+  box-shadow: 0 0 50px rgb(0 0 0 / 75%) inset;
+}
+
+.project:hover .image1 {
+  width: 100%;
+  position: absolute;
+  height: 100%;
   box-shadow: var(--darkShadow);
   margin-bottom: 2rem;
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
-}
-
-.project:after {
-  content: '';
-  width: 100%;
-  position: absolute;
-  height: 100%;
-  margin-bottom: 2rem;
-  background-image: url('../../../public/hover.jpg');
-  box-shadow: 0 0 50px rgb(0 0 0 / 75%) inset;
-  background-repeat: no-repeat;
-  background-size: cover;
-  cursor: pointer;
-  transform: translateY(-300px);
-  filter: grayscale(0.75);
-  transition: all 0.4s ease-in-out;
-}
-
-.project:hover::after {
-  display: block;
   transform: translateY(0px);
+  transition: all 0.2s ease-in-out;
 }
-
-.project:hover button {
+.project:hover a {
   opacity: 1;
 }
-.project:hover::after .button {
-  display: block;
-}
-
 .project .name {
   position: absolute;
   text-align: center;
@@ -100,9 +106,51 @@
   align-items: center;
   width: 100%;
   background: var(--secondary-color);
-  height: 3rem;
+  height: 2rem;
+  box-shadow: 0 0 30px rgb(0, 0, 0, 100%);
 }
 .project .name h3 {
   font-size: 1.2rem;
   font-family: Poppins;
+  width: 100%;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 800px) {
+  .content {
+    width: 90vw;
+    margin: auto auto;
+    height: 100%;
+  }
+  .project {
+    width: 90vw;
+  }
+  .page-description {
+    padding: 0px 10px;
+    min-width: 90vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .content {
+    width: 100vw;
+    margin: auto auto;
+    height: 100%;
+  }
+
+  .project {
+    width: 90vw;
+  }
+  .page-description h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .page-description p {
+    font-size: 1rem;
+
+    margin-bottom: 20px;
+  }
+  .page-description {
+    padding: 0px 20px;
+  }
 }

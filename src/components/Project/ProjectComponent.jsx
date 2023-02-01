@@ -1,13 +1,17 @@
 import './ProjectComponent.css';
 
-function ProjectComponent() {
+function ProjectComponent(src) {
   return (
     <div>
-      <div className="project" id="project">
+      <div className="project">
         <div className="name">
-          <h3>Nome do Projeto</h3>
+          <h3>name</h3>
         </div>
-        <button className="button">Ver mais</button>
+        <a href={src}>Ver mais</a>
+        <div className="main-image">
+          <img src="./images/paisagem.jpg" alt="" className="image1" />
+          <img src="./images/hover.jpg" alt="" className="image2" />
+        </div>
       </div>
     </div>
   );

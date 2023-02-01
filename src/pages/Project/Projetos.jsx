@@ -9,21 +9,34 @@ function Projetos() {
     <>
       <NavButton />
       <div className="content">
+        <div className="ribon">
+          <a
+            href="https://github.com/fescarvalho"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Github
+          </a>
+        </div>
         <div className="page-description">
-          <h2>Portifolio</h2>
+          <h2>Portifólio</h2>
           <p>
             Aqui estão alguns dos meus projetos, desenvolvidos com tecnologias
             para desenvolvimento Web, como, JavaScript, ReactJs, Typescript,
             SASS, NodeJs, entre outras.
+            <p>
+              Você pode conferir outros projetos no meu Github, clicando no
+              botão azul a direita.
+            </p>
           </p>
         </div>
         <div className="project-main">
-          <ProjectComponent />
-          <ProjectComponent />
-          <ProjectComponent />
-          <ProjectComponent />
-          <ProjectComponent />
-          <ProjectComponent />
+          <ProjectComponent name="Nome do Projeto" />
+          <ProjectComponent name="Nome do Projeto" />
+          <ProjectComponent name="Nome do Projeto" />
+          <ProjectComponent name="Nome do Projeto" />
+          <ProjectComponent name="Nome do Projeto" />
+          <ProjectComponent name="Nome do Projeto" />
         </div>
       </div>
     </>

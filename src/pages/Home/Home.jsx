@@ -24,7 +24,7 @@ function Home() {
       <div className="content-home">
         <div className="main">
           <h1 className="main-title">
-            Ola meu nome é <span>Fernando Carvalho</span>
+            Ola, meu nome é <span>Fernando Carvalho</span>
           </h1>
           <p className="main-description">
             Sou analista de sistema, pós graduado em ciencia de dados, porem
