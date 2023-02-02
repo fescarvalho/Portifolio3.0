@@ -53,15 +53,16 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .project-main {
     width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: initial;
   }
 }
+
 @media (max-width: 500px) {
   .project-main {
     width: 100vw;

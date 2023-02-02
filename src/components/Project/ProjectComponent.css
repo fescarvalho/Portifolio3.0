@@ -73,21 +73,18 @@
   height: 100%;
   transform: translateY(-300px);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   cursor: pointer;
   filter: grayscale(80%) blur(1px);
-  box-shadow: 0 0 50px rgb(0 0 0 / 75%) inset;
 }
 .project .image2 {
-  box-shadow: 0 0 50px rgb(0 0 0 / 75%) inset;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9);
 }
 
 .project:hover .image1 {
   width: 100%;
   position: absolute;
   height: 100%;
-  box-shadow: var(--darkShadow);
-  margin-bottom: 2rem;
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
@@ -116,14 +113,9 @@
   letter-spacing: 2px;
 }
 
-@media (max-width: 800px) {
-  .content {
-    width: 90vw;
-    margin: auto auto;
-    height: 100%;
-  }
+@media (max-width: 1000px) {
   .project {
-    width: 90vw;
+    width: 500px;
   }
   .page-description {
     padding: 0px 10px;
@@ -133,13 +125,14 @@
 
 @media (max-width: 500px) {
   .content {
-    width: 100vw;
+    width: 90vw;
     margin: auto auto;
     height: 100%;
   }
 
   .project {
     width: 90vw;
+    height: 250px;
   }
   .page-description h2 {
     font-size: 2rem;

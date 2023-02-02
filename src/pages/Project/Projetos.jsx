@@ -5,7 +5,7 @@
 import './Projetos.css';
 import NavButton from '../../components/NavButton/NavButton';
 import ProjectComponent from '../../components/Project/ProjectComponent';
-import projetos from './mockProject';
+import projetos from '../../mockProject';
 
 function Projetos() {
   return (
