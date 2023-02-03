@@ -25,6 +25,7 @@ function App() {
             />
           }
         />
+
         <Route
           path="/projetos/bike"
           element={
