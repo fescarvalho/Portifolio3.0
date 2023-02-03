@@ -41,13 +41,13 @@ function NavButton() {
           <span>Contato</span>
         </NavLink>
       </nav>
-      <header className="header">
+      <div className="menuBurguer">
         <div className="burguer" onClick={rotateButton}>
           <i></i>
           <i></i>
           <i></i>
         </div>
-      </header>
+      </div>
     </>
   );
 }

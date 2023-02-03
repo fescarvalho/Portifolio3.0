@@ -86,11 +86,14 @@
 }
 
 @media (max-width: 500px) {
+  .header {
+    display: none;
+  }
   .main {
     width: 100%;
     min-height: 400px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,21 +101,31 @@
   }
   .main h1 {
     letter-spacing: 1px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .main p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .main-title {
     width: 100%;
   }
+
   .main-title span {
     display: inline-block;
     font-family: 'Poppins ';
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .main-description {
-    min-height: 300px;
-    width: 80%;
+    min-height: 400px;
+    width: 90%;
+  }
+  .main p {
+    font-family: 'Heboo';
+
+    font-size: 1.2rem;
+    color: var(--text-color3);
+    position: relative;
+    margin-left: 5px;
+    opacity: 1;
   }
 }

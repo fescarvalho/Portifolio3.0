@@ -1,0 +1,152 @@
+.contact {
+  width: 90vw;
+  margin: 30px auto;
+}
+
+.main-contact {
+  max-width: 60rem;
+  height: 100%;
+  margin: 10rem auto;
+}
+
+.main-contact h1 {
+  font-size: 3rem;
+  color: var(--text-color1);
+  font-family: 'Heebo';
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.main-contact p {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.3rem;
+  font-family: 'Poppins';
+  color: var(--text-color3);
+  letter-spacing: 2px;
+}
+.main-contact p a {
+  font-size: 1.3rem;
+  font-family: 'Poppins';
+  color: var(--text-color2);
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: color 0.12s ease-out 0s;
+}
+.main-contact p a:hover {
+  color: var(--secondary-color);
+}
+
+.main-contact .main-email {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.main-contact .main-social h3 {
+  font-size: 2.3rem;
+  color: var(--text-color1);
+  font-family: 'Heebo';
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.main-contact .main-social div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+
+  gap: 20px;
+}
+.main-contact .main-social div a {
+  position: relative;
+  display: flex;
+  max-width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color1);
+  font-weight: semi-bold;
+  font-size: 1rem;
+  font-family: 'Poppins';
+  letter-spacing: 1px;
+  gap: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: var(--darkShadow);
+  transition: box-shadow 0.12s ease-out 0s;
+}
+.main-contact .main-social div a:hover {
+  box-shadow: 2px 2px 2px #000000;
+}
+
+.main-contact .main-social div a:first-child {
+  background-color: #0077b5;
+}
+.main-contact .main-social div a:nth-child(2n) {
+  background-color: #1d2226;
+}
+.main-contact .main-social div a:last-child {
+  background: radial-gradient(
+      circle at 15% 110%,
+      #fdf497 0,
+      #fd5949 25%,
+      #d6249f 60%,
+      #285aeb 90%
+    ),
+    radial-gradient(
+      circle at 25% 110%,
+      #b9a800 0,
+      #938500 5%,
+      #b10f00 45%,
+      #8c0061 60%,
+      #002ca9 90%
+    );
+}
+.main-contact .main-social a img {
+  width: 25px;
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  .contact {
+    width: 90vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .main-contact {
+    margin: 1rem auto;
+  }
+  .main-contact h1 {
+    font-size: 2rem;
+  }
+
+  .main-contact p {
+    font-size: 1rem;
+  }
+  .main-contact p a {
+    font-size: 1rem;
+  }
+  .main-contact .main-social div {
+    flex-wrap: wrap;
+  }
+  .main-contact .main-email {
+    margin-bottom: 40px;
+  }
+
+  .main-contact .main-social h3 {
+    font-size: 2rem;
+  }
+  .main-contact p a {
+    font-size: 0.9rem;
+    display: flex;
+    white-space: wrap;
+  }
+}

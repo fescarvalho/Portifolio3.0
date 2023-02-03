@@ -4,6 +4,7 @@
   position: absolute;
   list-style: none;
   left: 0;
+  bottom: 90px;
   z-index: 10;
   margin-top: -200px;
 }
