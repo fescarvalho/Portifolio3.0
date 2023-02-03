@@ -80,7 +80,7 @@ function App() {
               name="Hours Bus"
               srcLink="https://hoursbus.vercel.app"
               srcGithub="https://github.com/fescarvalho/HoursBus"
-              srcImage="/images/hoursBus/image1.png"
+              srcImage="/images/HoursBus/image1.png"
               description="Projeto criado para divulgação de horario de onibus."
               tecs={['Typescript', 'React', 'CssModules']}
             />
