@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import NavButton from '../../components/NavButton/NavButton';
 import './PageProject.css';
 
-function PageProject({
+function PageProjectFront({
   name,
   srcLink,
   srcGithub,
@@ -77,4 +77,4 @@ function PageProject({
   );
 }
 
-export default PageProject;
+export default PageProjectFront;

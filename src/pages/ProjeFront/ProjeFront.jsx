@@ -1,17 +1,29 @@
-/* eslint-disable array-callback-return */
-/* eslint-disable no-unused-vars */
-/* eslint-disable jsx-a11y/mouse-events-have-key-events */
-
-import './Projetos.css';
+import '../Project/Projetos.css';
+import '../PageProject/PageProject.css';
 import { NavLink } from 'react-router-dom';
 import NavButton from '../../components/NavButton/NavButton';
 import ProjectComponent from '../../components/Project/ProjectComponent';
-import { projetosFront, projetosBack } from '../../mockProject';
+import { projetosFront } from '../../mockProject';
 
-function Projetos() {
+function ProjetosFront() {
   return (
     <>
-      <NavButton />
+      <div className="header-page">
+        <NavLink to="/projetos">
+          <ul className="buttonLink">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+          </ul>
+        </NavLink>
+        <NavButton />
+      </div>
       <div className="content">
         <div className="ribon">
           <a
@@ -23,11 +35,9 @@ function Projetos() {
           </a>
         </div>
         <div className="page-description">
-          <h2>Portifólio</h2>
+          <h2>Projetos Front End</h2>
           <p>
-            Aqui estão alguns dos meus projetos, desenvolvidos com tecnologias
-            para desenvolvimento Web, como, JavaScript, ReactJs, Typescript,
-            SASS, NodeJs, entre outras.
+            Meus projetos, focados em desenvolvimento FrontEnd
             <p>
               Você pode conferir outros projetos no meu Github, clicando no
               botão azul a direita.
@@ -48,19 +58,10 @@ function Projetos() {
               linkImage2={projeto.linkImage2}
             />
           ))}
-          {projetosBack.map((projeto) => (
-            <ProjectComponent
-              key={projeto.id}
-              name={projeto.name}
-              src={projeto.src}
-              linkImage1={projeto.linkImage1}
-              linkImage2={projeto.linkImage2}
-            />
-          ))}
         </div>
       </div>
     </>
   );
 }
 
-export default Projetos;
+export default ProjetosFront;

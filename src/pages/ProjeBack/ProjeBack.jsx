@@ -1,17 +1,28 @@
-/* eslint-disable array-callback-return */
-/* eslint-disable no-unused-vars */
-/* eslint-disable jsx-a11y/mouse-events-have-key-events */
-
-import './Projetos.css';
 import { NavLink } from 'react-router-dom';
 import NavButton from '../../components/NavButton/NavButton';
+import '../Project/Projetos.css';
 import ProjectComponent from '../../components/Project/ProjectComponent';
-import { projetosFront, projetosBack } from '../../mockProject';
+import { projetosBack } from '../../mockProject';
 
-function Projetos() {
+function ProjetosBack() {
   return (
     <>
-      <NavButton />
+      <div className="header-page">
+        <NavLink to="/projetos">
+          <ul className="buttonLink">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+          </ul>
+        </NavLink>
+        <NavButton />
+      </div>
       <div className="content">
         <div className="ribon">
           <a
@@ -23,11 +34,9 @@ function Projetos() {
           </a>
         </div>
         <div className="page-description">
-          <h2>Portifólio</h2>
+          <h2>Projetos Back End</h2>
           <p>
-            Aqui estão alguns dos meus projetos, desenvolvidos com tecnologias
-            para desenvolvimento Web, como, JavaScript, ReactJs, Typescript,
-            SASS, NodeJs, entre outras.
+            Meus projetos, focados em desenvolvimento BackEnd
             <p>
               Você pode conferir outros projetos no meu Github, clicando no
               botão azul a direita.
@@ -39,15 +48,6 @@ function Projetos() {
           <NavLink to="/project/backend">Backend</NavLink>
         </div>
         <div className="project-main">
-          {projetosFront.map((projeto) => (
-            <ProjectComponent
-              key={projeto.id}
-              name={projeto.name}
-              src={projeto.src}
-              linkImage1={projeto.linkImage1}
-              linkImage2={projeto.linkImage2}
-            />
-          ))}
           {projetosBack.map((projeto) => (
             <ProjectComponent
               key={projeto.id}
@@ -63,4 +63,4 @@ function Projetos() {
   );
 }
 
-export default Projetos;
+export default ProjetosBack;

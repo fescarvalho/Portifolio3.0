@@ -36,6 +36,45 @@
   height: 44px;
   line-height: 47px;
 }
+.linksStacks {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.linksStacks a {
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  background: var(--destaq);
+  gap: 40px;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-family: 'Poppins';
+  color: var(--text-color2);
+  box-shadow: var(--darkShadow);
+}
+.linksStacks a.active {
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  background: var(--destaq);
+  gap: 40px;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-family: 'Poppins';
+  color: var(--text-color1);
+  box-shadow: var(--darkShadow);
+}
 .project-main {
   display: grid;
   grid-template-columns: 1fr 1fr;

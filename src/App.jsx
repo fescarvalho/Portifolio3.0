@@ -2,7 +2,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Projetos from './pages/Project/Projetos';
 import Contato from './pages/Contact/Contato';
-import PageProject from './pages/PageProject/PageProject';
+import PageProjectFront from './pages/PageProject/PageProjectFront';
+import PageProjectBack from './pages/PageProject/PageProjectBack';
+import ProjeFront from './pages/ProjeFront/ProjeFront';
+import ProjeBack from './pages/ProjeBack/ProjeBack';
 
 function App() {
   return (
@@ -11,11 +14,13 @@ function App() {
         <Route path="/" end element={<Home />} />
         <Route path="/projetos" element={<Projetos />} />
         <Route path="/contato" element={<Contato />} />
-
+        <Route path="/project/frontend" element={<ProjeFront />} />
+        <Route path="/project/backend" element={<ProjeBack />} />
+        {/* FrontEnd */}
         <Route
-          path="/projetos/dogs"
+          path="/projetos/frontend/dogs"
           element={
-            <PageProject
+            <PageProjectFront
               name="Dogs-Rede Social"
               srcLink="https://dogs-social.vercel.app/"
               srcGithub="https://github.com/fescarvalho/Dogs"
@@ -25,11 +30,10 @@ function App() {
             />
           }
         />
-
         <Route
-          path="/projetos/bike"
+          path="/projetos/frontend/bike"
           element={
-            <PageProject
+            <PageProjectFront
               name="Bike Craft"
               srcLink="https://bikcraftmotors.netlify.app/"
               srcGithub="https://github.com/fescarvalho/bikcraft"
@@ -40,9 +44,9 @@ function App() {
           }
         />
         <Route
-          path="/projetos/supermarket"
+          path="/projetos/frontend/supermarket"
           element={
-            <PageProject
+            <PageProjectFront
               name="Super Market List"
               srcLink="https://app-supermarket-list-front.vercel.app/"
               srcGithub="https://github.com/fescarvalho/APP-SupermarketList-Front"
@@ -62,9 +66,9 @@ function App() {
           }
         />
         <Route
-          path="/projetos/lescone"
+          path="/projetos/frontend/lescone"
           element={
-            <PageProject
+            <PageProjectFront
               name="Le Scone Restaurante"
               srcLink="https://le-scone-degust.vercel.app"
               srcGithub="https://github.com/fescarvalho/LeScone"
@@ -75,9 +79,9 @@ function App() {
           }
         />
         <Route
-          path="/projetos/hoursbus"
+          path="/projetos/frontend/hoursbus"
           element={
-            <PageProject
+            <PageProjectFront
               name="Hours Bus"
               srcLink="https://hoursbus.vercel.app"
               srcGithub="https://github.com/fescarvalho/HoursBus"
@@ -88,9 +92,9 @@ function App() {
           }
         />
         <Route
-          path="/projetos/walletapp"
+          path="/projetos/frontend/walletapp"
           element={
-            <PageProject
+            <PageProjectBack
               name="Wallet App"
               srcLink="https://wallet-app-frontend.vercel.app"
               srcGithub="https://github.com/fescarvalho/wallet-app-frontend"
@@ -104,6 +108,34 @@ function App() {
                 'PostgresSQL',
                 'Express',
               ]}
+            />
+          }
+        />
+
+        {/* BackEnd */}
+        <Route
+          path="/projetos/backend/walletapp"
+          element={
+            <PageProjectFront
+              name="Wallet App"
+              srcLink="https://walletappbackend-production.up.railway.app/"
+              srcGithub="https://github.com/fescarvalho/WalletAppBackend"
+              srcImage="/images/WalletApp/image1.png"
+              description="API construida para compor o projeto Wallet App."
+              tecs={['NodeJs', 'Docker', 'PostgresSQL', 'Express']}
+            />
+          }
+        />
+        <Route
+          path="/projetos/backend/supermarket"
+          element={
+            <PageProjectFront
+              name="Wallet App"
+              srcLink="https://api-supermarke-list-production.up.railway.app/"
+              srcGithub="https://github.com/fescarvalho/API-Supermarke-List"
+              srcImage="/images/Supermarket/image1.png"
+              description="API construida para compor o projeto Super Market."
+              tecs={['NodeJs', 'Docker', 'MongoDB', 'Mongoose', 'Express']}
             />
           }
         />
