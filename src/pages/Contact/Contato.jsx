@@ -41,7 +41,7 @@ function Contato() {
             animate={{ opacity: 1 }}
             transition={{ duration: 2 }}
           >
-            Siga minha página no <span>Twitter</span> , <span>Instagram </span>e{' '}
+            Siga minha página no <span>Twitter</span>, <span> Instagram </span>e{' '}
             <span> Linkedin.</span>
           </motion.p>
           <div className="socialLinks">

@@ -1,6 +1,8 @@
 .contact {
   width: 90vw;
+  height: 100%;
   margin: 30px auto;
+  overflow: hidden;
 }
 
 .main-contact {
@@ -25,6 +27,9 @@
   font-family: 'Poppins';
   color: var(--text-color3);
   letter-spacing: 2px;
+}
+.main-contact p span {
+  margin: 0 4px;
 }
 .main-contact p a {
   font-size: 1.3rem;
