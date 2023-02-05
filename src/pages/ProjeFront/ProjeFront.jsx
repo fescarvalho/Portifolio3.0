@@ -1,6 +1,8 @@
 import '../Project/Projetos.css';
 import '../PageProject/PageProject.css';
+
 import { NavLink } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import NavButton from '../../components/NavButton/NavButton';
 import ProjectComponent from '../../components/Project/ProjectComponent';
 import { projetosFront } from '../../mockProject';
@@ -34,6 +36,7 @@ function ProjetosFront() {
             Github
           </a>
         </div>
+
         <div className="page-description">
           <h2>Projetos Front End</h2>
           <p>
@@ -48,17 +51,27 @@ function ProjetosFront() {
           <NavLink to="/project/frontend">FrontEnd</NavLink>
           <NavLink to="/project/backend">Backend</NavLink>
         </div>
-        <div className="project-main">
-          {projetosFront.map((projeto) => (
-            <ProjectComponent
-              key={projeto.id}
-              name={projeto.name}
-              src={projeto.src}
-              linkImage1={projeto.linkImage1}
-              linkImage2={projeto.linkImage2}
-            />
-          ))}
-        </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          <div className="project-main">
+            <ul>
+              {projetosFront.map((projeto) => (
+                <li>
+                  <ProjectComponent
+                    key={projeto.id}
+                    name={projeto.name}
+                    src={projeto.src}
+                    linkImage1={projeto.linkImage1}
+                    linkImage2={projeto.linkImage2}
+                  />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </motion.div>
       </div>
     </>
   );

@@ -1,4 +1,4 @@
-import React from 'react';
+import { motion } from 'framer-motion';
 import NavButton from '../../components/NavButton/NavButton';
 import './Contato.css';
 
@@ -8,38 +8,72 @@ function Contato() {
       <NavButton />
       <div className="main-contact">
         <div className="main-email">
-          <h1>Entre em contato...</h1>
-          <p>
+          <motion.h1
+            initial={{ translateX: -1000 }}
+            animate={{ translateX: 0 }}
+            transition={{ duration: 1 }}
+          >
+            Entre em contato...
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+          >
             Se você quiser entrar em contato, falar comigo sobre uma colaboração
             de projeto ou apenas dizer oi, me envie um e-mail para
             <a href="mailto:fernando_scarvalho@hotmail.com">
-              {' '}
               fernando_scarvalho@hotmail.com
-            </a>{' '}
+            </a>
             e vamos conversar.
-          </p>
+          </motion.p>
         </div>
         <div className="main-social">
-          <h3>Vamos socializar e criar networking...</h3>
-          <p>
+          <motion.h3
+            initial={{ translateX: -1000 }}
+            animate={{ translateX: 0 }}
+            transition={{ duration: 1 }}
+          >
+            Vamos socializar e criar networking...
+          </motion.h3>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+          >
             Siga minha página no <span>Twitter</span> , <span>Instagram </span>e{' '}
             <span> Linkedin.</span>
-          </p>
+          </motion.p>
           <div className="socialLinks">
-            <a href="https://twitter.com/_fescarv">
+            <motion.a
+              initial={{ translateY: 1000 }}
+              animate={{ translateY: 0 }}
+              transition={{ duration: 1 }}
+              href="https://twitter.com/_fescarv"
+            >
               <img src="/icons/contact/twitter.svg" alt="" />
               <span>Twitter</span>
-            </a>
+            </motion.a>
 
-            <a href="https://www.linkedin.com/in/fecarvalhodev/">
+            <motion.a
+              initial={{ translateY: 1000 }}
+              animate={{ translateY: 0 }}
+              transition={{ duration: 1.5 }}
+              href="https://www.linkedin.com/in/fecarvalhodev/"
+            >
               <img src="/icons/contact/linkedin.svg" alt="" />
               <span>Linkedin</span>
-            </a>
+            </motion.a>
 
-            <a href="https://www.instagram.com/fescarv/">
+            <motion.a
+              initial={{ translateY: 1000 }}
+              animate={{ translateY: 0 }}
+              transition={{ duration: 2 }}
+              href="https://www.instagram.com/fescarv/"
+            >
               <img src="/icons/contact/instagram.svg" alt="" />
               <span>Instagram</span>
-            </a>
+            </motion.a>
           </div>
         </div>
       </div>

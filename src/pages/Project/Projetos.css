@@ -75,13 +75,13 @@
   color: var(--text-color1);
   box-shadow: var(--darkShadow);
 }
-.project-main {
+.project-main ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   flex-wrap: wrap;
   width: 100%;
-
   margin-top: 2rem;
+  list-style: none;
 }
 
 @keyframes animeBanner {
@@ -94,7 +94,7 @@
 }
 
 @media (max-width: 1000px) {
-  .project-main {
+  .project-main ul {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -104,7 +104,7 @@
 }
 
 @media (max-width: 500px) {
-  .project-main {
+  .project-main ul {
     width: 90vw;
     display: flex;
     margin: 0 auto;

@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import NavButton from '../../components/NavButton/NavButton';
 import '../Project/Projetos.css';
@@ -34,7 +35,13 @@ function ProjetosBack() {
           </a>
         </div>
         <div className="page-description">
-          <h2>Projetos Back End</h2>
+          <motion.h2
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            Projetos Back End
+          </motion.h2>
           <p>
             Meus projetos, focados em desenvolvimento BackEnd
             <p>
@@ -47,17 +54,27 @@ function ProjetosBack() {
           <NavLink to="/project/frontend">FrontEnd</NavLink>
           <NavLink to="/project/backend">Backend</NavLink>
         </div>
-        <div className="project-main">
-          {projetosBack.map((projeto) => (
-            <ProjectComponent
-              key={projeto.id}
-              name={projeto.name}
-              src={projeto.src}
-              linkImage1={projeto.linkImage1}
-              linkImage2={projeto.linkImage2}
-            />
-          ))}
-        </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          <div className="project-main">
+            <ul>
+              {projetosBack.map((projeto) => (
+                <li>
+                  <ProjectComponent
+                    key={projeto.id}
+                    name={projeto.name}
+                    src={projeto.src}
+                    linkImage1={projeto.linkImage1}
+                    linkImage2={projeto.linkImage2}
+                  />
+                </li>
+              ))}
+            </ul>
+          </div>
+        </motion.div>
       </div>
     </>
   );

@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { motion } from 'framer-motion';
 import NavButton from '../../components/NavButton/NavButton';
 import Socials from '../../components/Socials/Socials';
 import './Home.css';
@@ -19,8 +20,13 @@ function Home() {
   }, []);
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <NavButton />
+
       <div className="content-home">
         <div className="main">
           <h1 className="main-title">
@@ -35,7 +41,7 @@ function Home() {
         </div>
       </div>
       <Socials />
-    </>
+    </motion.div>
   );
 }
 
