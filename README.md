@@ -2,11 +2,7 @@
 
 ## Intro
 
-This is my project front end to porfolio.
-
-<p>
-  <img height="500" src="/images/readme.gif"/>
-</p>
+This is my project front end to my porfolio.
 
 ## Tecnlogies useds
 
