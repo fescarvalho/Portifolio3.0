@@ -5,7 +5,7 @@
 This is my project front end to porfolio.
 
 <p>
-  <img height="500" src="/images/readme.gif"/>
+  <img height="500" src=""/>
 </p>
 
 ## Tecnlogies useds
