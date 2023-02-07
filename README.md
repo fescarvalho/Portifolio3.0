@@ -5,7 +5,7 @@
 This is my project front end to porfolio.
 
 <p>
-  <img height="500" src="https://i.picasion.com/pic92/62b7d35726bccd952b3df04b0fadf975.gif"/>
+  <img height="500" src="/images/readme.gif"/>
 </p>
 
 ## Tecnlogies useds
