@@ -1,10 +1,19 @@
-import { useEffect } from 'react';
+/* eslint-disable no-unused-vars */
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import NavButton from '../../components/NavButton/NavButton';
 import Socials from '../../components/Socials/Socials';
+
 import './Home.css';
 
 function Home() {
+  const [isMobile, setIsMobile] = useState(false);
+  function mobile() {
+    if (window.innerWidth < 500) {
+      setIsMobile(true);
+    }
+  }
+
   const textEffect = () => {
     const element = document.querySelector('p');
     const textoArray = element.innerHTML.split('');
@@ -16,6 +25,7 @@ function Home() {
     );
   };
   useEffect(() => {
+    mobile();
     textEffect();
   }, []);
 
@@ -39,6 +49,17 @@ function Home() {
             de PROJETOS, ou visitando meu github.
           </p>
         </div>
+        <motion.div
+          className="curriculo"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 12 }}
+        >
+          <a href="https://drive.google.com/u/0/uc?id=1vuZ8rQhCoZQa3gen0og5WVi_o51O5M85&export=download">
+            <img src="/icons/arrownDown.svg" alt="" />
+            Currículo
+          </a>
+        </motion.div>
       </div>
       <Socials />
     </motion.div>
