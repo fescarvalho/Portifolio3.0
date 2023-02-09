@@ -26,6 +26,10 @@
   top: 25px;
   animation: animeButtonLink 2s ease-in-out;
 }
+
+.linksStacks {
+  gap: 3.4rem;
+}
 @keyframes animeButtonLink {
   0% {
     transform: translateX(-400px);
@@ -340,7 +344,9 @@
     font-size: 0.9rem;
     color: var(--text-color2);
   }
-
+  .linksStacks {
+    gap: 0.9rem;
+  }
   .contentProject {
     margin: 0;
     width: 90%;

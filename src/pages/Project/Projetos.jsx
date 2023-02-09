@@ -64,6 +64,7 @@ function Projetos() {
           <ul>
             {projetosFront.map((projeto) => (
               <motion.li
+                className="li-project"
                 key={projeto.id}
                 inital={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
