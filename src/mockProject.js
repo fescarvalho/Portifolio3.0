@@ -18,7 +18,6 @@ export const projetosFront = [
 
   {
     id: 3,
-
     name: 'Supermarket',
     linkImage1: '/images/Supermarket/image1.png',
     linkImage2: '/images/Supermarket/image2.png',

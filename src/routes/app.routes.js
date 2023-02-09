@@ -54,7 +54,7 @@ function AppRoutes() {
               name="Super Market List"
               srcLink="https://app-supermarket-list-front.vercel.app/"
               srcGithub="https://github.com/fescarvalho/APP-SupermarketList-Front"
-              srcImage="/images/SuperMarket/image2.png"
+              srcImage="/images/Supermarket/image1.png"
               description="Projeto criado para auxilio na organização de lista de compras de supermercado. Foi construida API para salvamento dos dados e cadastro do usuario."
               tecs={[
                 'React',
