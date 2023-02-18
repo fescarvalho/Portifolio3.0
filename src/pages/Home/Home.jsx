@@ -1,3 +1,4 @@
+/* eslint-disable react/style-prop-object */
 /* eslint-disable no-unused-vars */
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
@@ -55,7 +56,7 @@ function Home() {
           animate={{ opacity: 1 }}
           transition={{ delay: 12 }}
         >
-          <a href="https://drive.google.com/u/0/uc?id=1vuZ8rQhCoZQa3gen0og5WVi_o51O5M85&export=download">
+          <a href="https://drive.google.com/u/0/uc?id=1_hOKAzHeAIQOACsNOWfgsxAX4wQMyWnF&export=download">
             <img src="/icons/arrownDown.svg" alt="" />
             Currículo
           </a>
