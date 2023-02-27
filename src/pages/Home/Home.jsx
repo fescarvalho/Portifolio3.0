@@ -56,7 +56,7 @@ function Home() {
           animate={{ opacity: 1 }}
           transition={{ delay: 12 }}
         >
-          <a href="https://drive.google.com/u/0/uc?id=1SlAM37dt21--5jbLqTNa6jbjc91TKDhJ&export=download">
+          <a href="https://drive.google.com/u/0/uc?id=1kUihiIr1vJKe3ktfWmd3rFiSaanIL4br&export=download">
             <img src="/icons/arrownDown.svg" alt="" />
             Currículo
           </a>
