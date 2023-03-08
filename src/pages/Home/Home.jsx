@@ -9,6 +9,7 @@ import './Home.css';
 
 function Home() {
   const [isMobile, setIsMobile] = useState(false);
+
   function mobile() {
     if (window.innerWidth < 500) {
       setIsMobile(true);
@@ -25,6 +26,7 @@ function Home() {
       }, 50 * i),
     );
   };
+
   useEffect(() => {
     mobile();
     textEffect();

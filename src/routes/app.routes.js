@@ -19,6 +19,7 @@ function AppRoutes() {
         <Route path="/contato" element={<Contato />} />
         <Route path="/project/frontend" element={<ProjeFront />} />
         <Route path="/project/backend" element={<ProjeBack />} />
+        <Route path="/project/backend" element={<ProjeBack />} />
 
         {/* FrontEnd */}
         <Route
