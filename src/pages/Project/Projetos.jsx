@@ -99,6 +99,7 @@ function Projetos() {
                 ))}
                 {projetosBack.map((projeto) => (
                   <motion.li
+                    className="li-project"
                     key={projeto.id}
                     inital={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
