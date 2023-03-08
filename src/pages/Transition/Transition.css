@@ -8,30 +8,30 @@
 }
 
 .circulo {
-}
-.circulo::after {
-  position: absolute;
-  content: var(--content);
-  font-size: 1.2rem;
-  display: block;
-  color: #fff;
-  text-align: center;
+  width: 150px;
+  height: 150px;
+  border: 10px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 10px solid var(--secondary-color);
+  animation: spinner 1s infinite;
 }
 
 @keyframes spinner {
-  0% {
-    width: 0%;
+  from {
+    transform: rotate(0deg);
   }
-  25% {
-    width: 25%;
+  to {
+    transform: rotate(700deg);
   }
-  50% {
-    width: 50%;
-  }
-  75% {
-    width: 75%;
-  }
-  100% {
-    width: 100%;
+}
+
+@media (max-width: 500px) {
+  .circulo {
+    width: 80px;
+    height: 80px;
+    border: 6px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 6px solid var(--secondary-color);
+    animation: spinner 1s infinite;
   }
 }

@@ -9,9 +9,9 @@ function Contato() {
 
   function transition() {
     setLoading(true);
-    /*  setTimeout(() => {
+    setTimeout(() => {
       setLoading(false);
-    }, 2000); */
+    }, 2000);
   }
   useEffect(() => {
     transition();
