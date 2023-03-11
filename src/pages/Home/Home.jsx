@@ -61,9 +61,7 @@ function Home() {
             animate={{ opacity: 1 }}
             transition={{ delay: 12 }}
           >
-            {/*       https://drive.google.com/file/d/1XvJNqbAS1luX3-ejr2jBLfp9UjCV8bMC/view?usp=share_link */}
-            {/*   https://drive.google.com/file/d/19B7kbsB7Bq04AY-BkMi_UT3RmKUCjlL9/view?usp=share_link */}
-            {/*  https://drive.google.com/file/d/146N5e3z82WaO1S_4FuAV_VR42i1H0rrE/view?usp=share_link */}
+
             <a href="https://drive.google.com/u/0/uc?id=1XvJNqbAS1luX3-ejr2jBLfp9UjCV8bMC&export=download">
               <img src="/icons/arrownDown.svg" alt="" />
               Currículo
