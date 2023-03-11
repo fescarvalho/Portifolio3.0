@@ -34,7 +34,7 @@ export const projetosFront = [
   {
     id: 5,
     name: 'HoursBus',
-    linkImage1: '/images/HoursBus/image2.png',
+    linkImage1: '/images/HoursBus/image1.png',
     linkImage2: '/images/HoursBus/image1.png',
     src: '/projetos/frontend/hoursbus',
   },
