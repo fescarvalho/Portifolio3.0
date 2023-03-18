@@ -1,5 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
-import AppRoutes from './routes/app.routes';
+// eslint-disable-next-line import/extensions
+import AppRoutes from './routes/app.routes.jsx';
 
 function App() {
   return (
