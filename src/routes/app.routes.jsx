@@ -18,11 +18,10 @@ function AppRoutes() {
         <Route path="/projetos" element={<Projetos />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/project/frontend" element={<ProjeFront />} />
-        <Route path="/project/backend" element={<ProjeBack />} />
 
         {/* FrontEnd */}
         <Route
-          path="/projetos/frontend/dogs"
+          path="/project/frontend/dogs"
           element={
             <PageProjectFront
               name="Dogs-Rede Social"
@@ -35,7 +34,7 @@ function AppRoutes() {
           }
         />
         <Route
-          path="/projetos/frontend/bike"
+          path="/project/frontend/bike"
           element={
             <PageProjectFront
               name="Bike Craft"
@@ -48,7 +47,7 @@ function AppRoutes() {
           }
         />
         <Route
-          path="/projetos/frontend/supermarket"
+          path="/project/frontend/supermarket"
           element={
             <PageProjectFront
               name="Super Market List"
@@ -70,7 +69,7 @@ function AppRoutes() {
           }
         />
         <Route
-          path="/projetos/frontend/lescone"
+          path="/project/frontend/lescone"
           element={
             <PageProjectFront
               name="Le Scone Restaurante"
@@ -83,7 +82,7 @@ function AppRoutes() {
           }
         />
         <Route
-          path="/projetos/frontend/hoursbus"
+          path="/project/frontend/hoursbus"
           element={
             <PageProjectFront
               name="Hours Bus"
@@ -96,7 +95,7 @@ function AppRoutes() {
           }
         />
         <Route
-          path="/projetos/frontend/walletapp"
+          path="/project/frontend/walletapp"
           element={
             <PageProjectBack
               name="Wallet App"
@@ -115,10 +114,10 @@ function AppRoutes() {
             />
           }
         />
-
+        <Route path="/project/backend" element={<ProjeBack />} />
         {/* BackEnd */}
         <Route
-          path="/projetos/backend/walletapp"
+          path="/project/backend/walletapp"
           element={
             <PageProjectFront
               name="Wallet App"
@@ -131,7 +130,7 @@ function AppRoutes() {
           }
         />
         <Route
-          path="/projetos/backend/supermarket"
+          path="/project/backend/supermarket"
           element={
             <PageProjectFront
               name="Wallet App"
