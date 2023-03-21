@@ -51,8 +51,8 @@ function ProjetosBack() {
           </p>
         </div>
         <div className="linksStacks">
-          <NavLink to="/project/frontend">FrontEnd</NavLink>
-          <NavLink to="/project/backend">Backend</NavLink>
+          <NavLink to="/projetos/frontend">FrontEnd</NavLink>
+          <NavLink to="/projetos/backend">Backend</NavLink>
         </div>
         <motion.div
           initial={{ opacity: 0 }}

@@ -68,14 +68,14 @@ function Projetos() {
                 animate={{ translateX: 0 }}
                 transition={{ duration: 1 }}
               >
-                <NavLink to="/project/frontend">FrontEnd</NavLink>
+                <NavLink to="/projetos/frontend">FrontEnd</NavLink>
               </motion.div>
               <motion.div
                 initial={{ translateX: 500 }}
                 animate={{ translateX: 0 }}
                 transition={{ duration: 1 }}
               >
-                <NavLink to="/project/backend">Backend</NavLink>
+                <NavLink to="/projetos/backend">Backend</NavLink>
               </motion.div>
             </div>
             <div className="project-main">
