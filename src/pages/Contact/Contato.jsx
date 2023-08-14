@@ -41,8 +41,8 @@ function Contato() {
                 Se você quiser entrar em contato, falar comigo sobre uma
                 colaboração de projeto ou apenas dizer oi, me envie um e-mail
                 para
-                <a href="mailto:fernando_scarvalho@hotmail.com">
-                  fernando_scarvalho@hotmail.com
+                <a href="mailto:fecarv_dev@outlook.com">
+                  fecarv_dev@outlook.com
                 </a>
                 e vamos conversar.
               </motion.p>
